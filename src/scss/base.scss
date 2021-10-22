@@ -1,0 +1,84 @@
+@import "variables";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #141757;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  line-height: 150%;
+  background: #F4F5F0;
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+p {
+  color: $text-color;
+}
+
+img {
+  height: auto;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+#overlay {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.56) 100%);
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+@include respond-to(medium) {
+  body {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+@include respond-to(large) {
+  body {
+    font-size: 18px;
+  }
+}
+
+.hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+input[type="range"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

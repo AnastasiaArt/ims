@@ -1,0 +1,36 @@
+@import '../mixins';
+@import '../variables';
+@import '../mixins';
+
+.header {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 4.5%;
+  min-height: $header;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@include respond-to(medium) {
+  .header {
+    padding: 12px 0;
+    max-width: 1200px;
+    min-height: $header-desktop;
+    width: map-get($container, md);
+    position: relative;
+    margin: $center;
+
+    &__logo {
+      min-width: 154px;
+      max-width: 247px;
+      flex-grow: 1;
+
+      img {
+        width: 100% !important;
+      }
+    }
+  }
+}

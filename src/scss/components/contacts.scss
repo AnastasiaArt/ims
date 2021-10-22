@@ -1,0 +1,47 @@
+.contacts {
+  margin-bottom: 70px;
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__animate {
+    display: none;
+  }
+}
+
+@include respond-to(medium) {
+  .contacts {
+    margin-bottom: 200px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .contacts {
+
+    &__wrap {
+      position: relative;
+    }
+
+    &__form {
+      width: 70%;
+      max-width: 640px;
+    }
+
+    &__animate {
+      display: block;
+      position: absolute;
+      top: -100px;
+      right: -100px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .contacts {
+    &__animate {
+      top: -100px;
+      right: -40px;
+    }
+  }
+}

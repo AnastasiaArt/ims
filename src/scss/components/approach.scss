@@ -1,0 +1,113 @@
+@import '../mixins';
+@import '../variables';
+
+.approach {
+  margin-bottom: 96px;
+  margin-top: 30px;
+
+  &__text {
+    margin-bottom: 12px;
+  }
+
+  .circle {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: 60px;
+    left: -10px;
+    background-color: transparent;
+    border: $base-border;
+    border-radius: 50%;
+  }
+
+  &__animate {
+    position: relative;
+    border-radius: 50%;
+    border: $base-border;
+    height: 104px;
+    width: 104px;
+    margin-left: auto;
+
+    &.anim {
+      transform: rotate(100deg);
+      transition: transform 2s;
+    }
+  }
+}
+
+@include respond-to(sm-medium) {
+  .approach {
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__animate {
+      width: 200px;
+      height: 200px;
+      margin-left: 0;
+
+      &.animated {
+        transform: rotate(-100deg);
+      }
+    }
+
+    .circle {
+      width: 51px;
+      height: 51px;
+      top: 170px;
+      left: 110px;
+    }
+
+    &__text-wrap {
+      width: 60%;
+      max-width: 680px;
+      padding-right: 40px;
+    }
+  }
+}
+
+@include respond-to(medium) {
+  .approach {
+
+    &__text {
+      margin-bottom: 27px;
+    }
+
+    &__text-wrap {
+      width: 60%;
+      max-width: 640px;
+      padding-right: 0;
+    }
+
+    &__text {
+
+    }
+  }
+}
+
+@include respond-to(large) {
+  .approach {
+    margin-top: 50px;
+
+    &__animate {
+      width: 270px;
+      height: 270px;
+    }
+
+    .circle {
+      width: 80px;
+      height: 80px;
+      top: 200px;
+      left: 180px;
+    }
+
+    &__text-wrap {
+      max-width: 100%;
+    }
+
+    &__text {
+      max-width: 640px;
+    }
+  }
+}

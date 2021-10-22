@@ -1,0 +1,26 @@
+$accent-color: #5F65DA;
+$primary-color: #141757;
+$text-color: rgba(20, 23, 87, 0.87);
+$base-border: 1px solid $accent-color;
+$center: 0 auto;
+
+//width
+$container: (
+        "xs": 91%,
+        "md": 80%,
+        "lg": 80%,
+);
+
+//adaptive
+$breakpoints: (
+        "small": 550px,
+        "sm-medium":  900px,
+        "medium": 1040px,
+        "large": 1200px,
+);
+
+$duration: 0.3s;
+$transition-style: ease-in-out;
+
+$header: 63px;
+$header-desktop: 156px;

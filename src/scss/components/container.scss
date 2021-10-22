@@ -1,0 +1,14 @@
+@import '../mixins';
+@import '../variables';
+
+.container {
+  margin: $center;
+  width: map-get($container, xs);
+}
+
+@include respond-to(medium) {
+  .container {
+    width: map-get($container, md);
+    max-width: 1200px;
+  }
+}
