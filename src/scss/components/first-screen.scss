@@ -6,10 +6,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 70px;
 
   &__text-wrap {
     order: 2;
-    padding-top: 20%;
     position: relative;
   }
 
@@ -22,11 +22,19 @@
     span {
       color: $accent-color;
     }
+    span.typed-cursor {
+      color: $primary-color;
+      font-weight: 400;
+    }
   }
 
   &__text {
     margin-top: 16px;
     margin-bottom: 40px;
+
+    span {
+      white-space: nowrap;
+    }
   }
 
   &__btn {
@@ -52,6 +60,7 @@
     align-items: center;
     padding-top: 0;
     position: relative;
+    min-height: calc(100vh - 156px);
 
     &__text-wrap {
       order: 0;
@@ -91,7 +100,6 @@
 
 @include respond-to(large) {
   .first-screen {
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-top: 0;

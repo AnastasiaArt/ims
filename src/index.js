@@ -31,8 +31,8 @@ responsiveNav(".nav-collapse", {
 
 // animation for write text
 const options = {
-    strings: ["", " Reliable", " Professional", " Upscale", " Agile"],
-    typeSpeed: 20,
+    strings: ["", " Reliable"],
+    typeSpeed: 200,
     backSpeed: 20,
     startDelay: 0,
     loop: true,

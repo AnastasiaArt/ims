@@ -31,7 +31,7 @@ void main() {\n\
     gl_Position = vec4(position, 0.0, 1.0);\n\
 }\
 ', gl.VERTEX_SHADER);
-        let backgroundVec4 = [0.9568627450980393, 0.9607843137254902, 0.2, 0].join(', ');
+        let backgroundVec4 = [0.9568627450980393, 0.9607843137254902, 1, 0].join(', ');
         let color = [0.37254901960784315, 0.396078431372549, 0.8549019607843137, 1].join((', '));
         let fragmentShader = compileShader('\n\
 precision highp float;\n\
@@ -53,7 +53,7 @@ void main(){\n\
     if (v > 1.0) {\n\
         gl_FragColor = vec4(0.592156862745098, 0.592156862745098, 0.9098039215686274, 1);\n\
     } else {\n\
-        gl_FragColor = vec4('+ backgroundVec4 +');\n\
+        // gl_FragColor = vec4('+ backgroundVec4 +');\n\
     }\n\
 }\n\
 ', gl.FRAGMENT_SHADER);
