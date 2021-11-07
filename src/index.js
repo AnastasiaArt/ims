@@ -68,3 +68,17 @@ window.addEventListener("resize", resize)
 function resize() {
     changeDelay()
 }
+
+//smooth scroll
+document.querySelectorAll("a[href^=\"#\"]").forEach((anchor) => {
+    anchor.addEventListener("click", function (ev) {
+        ev.preventDefault();
+
+        const targetElement = document.querySelector(this.getAttribute("href"));
+        targetElement.scrollIntoView({
+            block: "start",
+            alignToTop: true,
+            behavior: "smooth"
+        });
+    });
+});

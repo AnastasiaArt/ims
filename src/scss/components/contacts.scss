@@ -54,8 +54,28 @@
   .contacts {
     margin-bottom: 200px;
 
+    &__wrap {
+      position: relative;
+    }
+
     &__address-name {
       font-size: 16px;
+    }
+
+    &__address {
+      flex-direction: column;
+    }
+
+    &__animate {
+      display: block;
+      position: absolute;
+      bottom: -100px;
+      right: -30px;
+    }
+
+    &__address-item {
+      width: 100%;
+      margin-bottom: 48px;
     }
   }
 }
@@ -65,7 +85,6 @@
     &__address-line {
       display: none;
     }
-
     &__address-wrap {
       position: relative;
       padding-left: 60px;
@@ -85,9 +104,9 @@
       margin-bottom: 16px;
     }
 
-    &__address {
-      flex-direction: column;
-    }
+    //&__address {
+    //  flex-direction: column;
+    //}
 
     &__wrap {
       display: flex;
@@ -101,7 +120,7 @@
     }
 
     &__animate {
-      display: block;
+      //display: block;
       //position: absolute;
       //bottom: -100px;
       //right: -100px;

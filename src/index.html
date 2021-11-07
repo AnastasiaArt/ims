@@ -145,57 +145,21 @@
         <section class="contacts" id="contacts">
             <h2 class="contacts__title title">Contacts</h2>
             <div class="contacts__wrap">
-                <form action="POST" class="form contacts__form">
-                    <div class="form__group">
-                        <input id="name" name="name" class="form__input" type="text" autocomplete="off" placeholder=" ">
-                        <label class="form__label" for="name">Your name</label>
+                <div class="contacts__address">
+                    <div class="contacts__address-item">
+                        <span class="contacts__address-name">Address</span>
+                        <p>224 West 35th Street #500, <span class="no-wrap-text">New York,</span> <span class="no-wrap-text">NY 10001</span></p>
                     </div>
-                    <div class="form__group">
-                        <input id="company" name="company" class="form__input" type="text" autocomplete="off"
-                               placeholder=" ">
-                        <label class="form__label" for="company">Company name</label>
-                    </div>
-                    <div class="form__group">
-                        <input class="form__input" id="phone" name="phone" type="text" autocomplete="off"
-                               placeholder=" ">
-                        <label class="form__label" for="phone">Phone number</label>
-                    </div>
-                    <div class="form__group">
-                        <input class="form__input" id="email" name="email" type="email" autocomplete="off"
-                               placeholder=" ">
-                        <label class="form__label" for="email">Email</label>
-                    </div>
-                    <div class="form__group form__group--textaria">
-                        <label class="form__label-textarea" for="message">Message</label>
-                        <div class="grow-wrap">
-                    <textarea
-                            class="form__textarea"
-                            id="message"
-                            name="message"
-                            onInput="this.parentNode.dataset.replicatedValue = this.value">
-                    </textarea>
-                        </div>
-                    </div>
-                    <button type="submit" class="form__btn button">Send request</button>
-                </form>
-                <div class="contacts__address-wrap">
-                    <div class="contacts__address">
-                        <div class="contacts__address-line"><span class="line"></span><span>or</span><span class="line"></span></div>
-                        <div class="contacts__address-item">
-                            <span class="contacts__address-name">Address</span>
-                            <p>224 West 35th Street #500, <span class="no-wrap-text">New York,</span> <span class="no-wrap-text">NY 10001</span></p>
-                        </div>
-                        <dip class="contacts__address-item mb-0">
-                            <span class="contacts__address-name">Call us</span>
-                            <p>+1 (917) 238-2837</p>
-                        </dip>
-                    </div>
-                    <div class="contacts__animate">
-                        <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_395f4ywh.json"
-                                       background="transparent" speed="1" style="width: 300px; height: 300px;" loop
-                                       autoplay>
-                        </lottie-player>
-                    </div>
+                    <dip class="contacts__address-item mb-0">
+                        <span class="contacts__address-name">Call us</span>
+                        <p>+1 (917) 238-2837</p>
+                    </dip>
+                </div>
+                <div class="contacts__animate">
+                    <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_395f4ywh.json"
+                                   background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                                   autoplay>
+                    </lottie-player>
                 </div>
             </div>
         </section>
