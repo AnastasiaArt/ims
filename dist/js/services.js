@@ -1,1 +1,0 @@
-const services=document.querySelectorAll(".services__item--second");function setDelayInServices(e){services.forEach((s=>{s.setAttribute("data-wow-delay",e)}))}function changeDelay(){window.innerWidth>1040?setDelayInServices("0.8s"):setDelayInServices("0.4s")}module.exports=changeDelay;
